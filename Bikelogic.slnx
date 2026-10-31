@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Bikelogic.Negocio/Bikelogic.Negocio.csproj" />
+  <Project Path="Bikelogic.Pruebas/Bikelogic.Pruebas.csproj" />
+</Solution>

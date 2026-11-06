@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+
+      - name: Revisar estilo con flake8
+        run: flake8 src tests features
+
+      - name: Ejecutar pruebas unitarias con cobertura
+        run: pytest --cov=bikelogic --cov-report=term-missing --cov-fail-under=80
+
+      - name: Ejecutar pruebas BDD con behave
+        if: ${{ hashFiles('features/**/*.feature') != '' }}
+        run: behave

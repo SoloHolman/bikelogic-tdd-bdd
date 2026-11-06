@@ -88,8 +88,21 @@ python -m pip install -r requirements.txt
 
 | Integrante | Rol |
 |------------|-----|
-| (completar) | (completar) |
+| Jhon Correa | Desarrollo y pruebas|
+| Julian Forero | Desarrollo y pruebas BDD|
+| Deiby Gomez | Desarrollo y documentación|
+| Mateo Beltran | Calidad y validación|
+| Holman Herrera | Integración continua y gestión del repositorio|
+## Referencias
 
 ## Referencias
 
-(completar en la entrega, en formato APA 7)
+Behave. (s. f.). *Behave documentation*. https://behave.readthedocs.io/
+
+Cucumber. (s. f.). *Gherkin reference*. https://cucumber.io/docs/gherkin/
+
+Flake8. (s. f.). *Flake8 documentation*. https://flake8.pycqa.org/
+
+pytest. (s. f.). *pytest documentation*. https://docs.pytest.org/
+
+Python Software Foundation. (s. f.). *Python documentation*. https://docs.python.org/3/
